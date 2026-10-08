@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Organization Topics</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #16213e;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #d9e1f2;
+    }
+
+    main {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    .topic {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .topic h2 {
+      color: #16213e;
+      margin-bottom: 10px;
+    }
+
+    .topic h3 {
+      margin: 20px 0 10px;
+    }
+
+    .subtopics {
+      margin: 10px 0 20px 20px;
+    }
+
+    .subtopics li {
+      margin-bottom: 5px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      background: #16213e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: 95%;
+      }
+
+      .topic {
+        padding: 18px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      .topic h2 {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Computer Organization and Architecture</h1>
+    <p>Memory, Cache, Virtual Memory, and Input/Output Organization</p>
+  </header>
+
+  <main>
+
+    <!-- Topic 1 -->
+    <section class="topic">
+      <h2>1. Memory Organization</h2>
+
+      <p>
+        Memory organization explains how different types of computer memory
+        are arranged and used by the computer.
+      </p>
+
+      <h3>Subtopics</h3>
+
+      <ul class="subtopics">
+        <li>Memory Hierarchy</li>
+        <li>Registers</li>
+        <li>Cache</li>
+        <li>RAM</li>
+        <li>ROM</li>
+        <li>Secondary Storage</li>
+      </ul>
+
+      <h3>Video</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/dlj-6AY0wKg"
+          title="Memory Organization"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+
+    <!-- Topic 2 -->
+    <section class="topic">
+      <h2>2. Cache and Virtual Memory</h2>
+
+      <p>
+        Cache and virtual memory help improve computer performance and allow
+        programs to efficiently use available memory.
+      </p>
+
+      <h3>Subtopics</h3>
+
+      <ul class="subtopics">
+        <li>Cache Mapping</li>
+        <li>Cache Hit and Cache Miss</li>
+        <li>Locality</li>
+        <li>Virtual Memory</li>
+        <li>Paging</li>
+      </ul>
+
+      <h3>Video 1</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/Ez_kyBS-y5w"
+          title="Cache Memory"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h3>Video 2</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/0Ed1x6-bAxY"
+          title="Virtual Memory"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+
+    <!-- Topic 3 -->
+    <section class="topic">
+      <h2>3. Input/Output Organization</h2>
+
+      <p>
+        Input/Output organization explains how the CPU communicates with
+        external devices such as keyboards, monitors, printers, and storage
+        devices.
+      </p>
+
+      <h3>Subtopics</h3>
+
+      <ul class="subtopics">
+        <li>I/O Devices</li>
+        <li>I/O Controllers</li>
+        <li>Programmed I/O</li>
+        <li>Memory-Mapped I/O</li>
+      </ul>
+
+      <h3>Video</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/tadUeiNe5-g"
+          title="Input Output Organization"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Computer Organization Learning Resources</p>
+  </footer>
+
+  <script>
+    console.log("Computer Organization page loaded successfully.");
+
+    // Example JavaScript:
+    // Displays the selected topic in the console when clicked.
+    const topics = document.querySelectorAll(".topic");
+
+    topics.forEach((topic) => {
+      topic.addEventListener("click", () => {
+        const title = topic.querySelector("h2").textContent;
+        console.log("Selected topic:", title);
+      });
+    });
+  </script>
+
+</body>
+</html>
